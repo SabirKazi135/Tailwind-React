@@ -1,7 +1,7 @@
 function Index() {
   return (
-    <div>
-      <div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl">
+    <div className="grid grid-cols-2">
+      <div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24">
         <img
           className="h-10"
           src="../public/img/logo-brand.svg"
@@ -12,7 +12,7 @@ function Index() {
           src="../public/img/beach-work.jpg"
           alt=""
         />
-        <h1 className="mt-6 sm:mt-8 text-2xl font-bold sm:text-4xl text-gray-900">
+        <h1 className="mt-6 sm:mt-8 text-2xl font-bold sm:text-4xl text-gray-900 lg:text-3xl ">
           You can work from anywhere.{" "}
           <span className="text-indigo-500"> Take advantage of it.</span>
         </h1>
