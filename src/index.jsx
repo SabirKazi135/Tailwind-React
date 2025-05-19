@@ -16,10 +16,18 @@ function Index() {
           You can work from anywhere.{" "}
           <span className="text-indigo-500"> Take advantage of it.</span>
         </h1>
-        <p className="mt-4">
+        <p className="mt-4 text-gray-600">
           Workcation helps you find work-friendly rentals in beautiful locations
           so you can enjoy some nice weather even when you're not on vacation.
         </p>
+        <div className="mt-4">
+          <a
+            className="bg-indigo-500 rounded-lg text-white inline-block px-5 py-3 shadow-lg"
+            href="#"
+          >
+            Book Your escape
+          </a>
+        </div>
       </div>
     </div>
   );
