@@ -1,7 +1,7 @@
 function Index() {
   return (
     <div>
-      <div className="px-8 py-12 w-1/3">
+      <div className="px-8 py-12 max-w-md mx-auto">
         <img
           className="h-10"
           src="../public/img/logo-brand.svg"
