@@ -8,7 +8,7 @@ function Index() {
           alt="Workcation"
         />
         <img
-          className="mt-6 sm:mt-8 rounded-lg sm:h-64 sm:w-full sm:object-cover sm:object-center shadow-xl"
+          className="mt-6 lg:hidden sm:mt-8 rounded-lg sm:h-64 sm:w-full sm:object-cover sm:object-center shadow-xl"
           src="../public/img/beach-work.jpg"
           alt=""
         />
@@ -28,6 +28,13 @@ function Index() {
             Book Your escape
           </a>
         </div>
+      </div>
+      <div>
+        <img
+          className="hidden lg:block "
+          src="../public/img/beach-work.jpg"
+          alt=""
+        />
       </div>
     </div>
   );
