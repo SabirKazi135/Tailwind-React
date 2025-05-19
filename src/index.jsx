@@ -1,7 +1,10 @@
 function Index() {
   return (
-    <div>
-      <img src="../public/img/logo-brand.svg" alt="" />
+      <div>
+          <div className="px-8 py-12">
+              
+      <img src="../public/img/logo-brand.svg" alt="Workcation" />
+          </div>
     </div>
   );
 }
