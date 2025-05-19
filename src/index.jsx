@@ -1,7 +1,7 @@
 function Index() {
   return (
-    <div className="grid grid-cols-2">
-      <div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24">
+    <div className="grid lg:grid-cols-2 bg-gray-100">
+      <div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full">
         <img
           className="h-10"
           src="../public/img/logo-brand.svg"
@@ -13,7 +13,8 @@ function Index() {
           alt=""
         />
         <h1 className="mt-6 sm:mt-8 text-2xl font-bold sm:text-4xl text-gray-900 lg:text-3xl ">
-          You can work from anywhere.{" "}
+          You can work from anywhere.
+          <br className="hidden lg:block" />
           <span className="text-indigo-500"> Take advantage of it.</span>
         </h1>
         <p className="mt-2 sm:mt-4 sm:text-xl text-gray-600">
@@ -29,9 +30,9 @@ function Index() {
           </a>
         </div>
       </div>
-      <div>
+      <div className="hidden relative lg:block">
         <img
-          className="hidden lg:block "
+          className="absolute inset-0 w-full h-full object-center object-cover"
           src="../public/img/beach-work.jpg"
           alt=""
         />
