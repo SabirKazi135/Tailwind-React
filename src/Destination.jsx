@@ -1,24 +1,18 @@
 import data from "./data/popularDestinations.js";
+import DestinationCard from "./components/DestinationCard.jsx";
 
 function Destination() {
   return (
-    <div>
-      {data.map((distination) => (
-        <div className="flex items-center rounded-lg bg-white shadow-lg overflow-hidden ">
-          <img
-            className="h-32 w-32 flex-shrink-0"
-            src={distination.imageUrl}
-            alt={distination.imageAlt}
-          />
-          <div className="px-6 py-4">
-            <h3>{distination.city}</h3>
-            <p>{distination.averagePrice}</p>
-            <div>
-              <a href="#">{distination.propertyCount}</a>
-            </div>
-          </div>
-        </div>
-      ))}
+    <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
+      <h2 className="text-xl text-gray-900">Popular destinations</h2>
+      <p className="mt-2 text-gray-600">
+        A selection of great work-friendly cities with lots to see and explore.
+      </p>
+      <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+        {data.map((destination) => (
+          <DestinationCard destination={destination} key={destination.city} />
+        ))}
+      </div>
     </div>
   );
 }
