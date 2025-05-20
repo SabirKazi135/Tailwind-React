@@ -23,9 +23,16 @@ function Index() {
             locations so you can enjoy some nice weather even when you're not on
             vacation.
           </p>
-          <div className="mt-4 sm:mt-6">
-            <a className="btn" href="#">
+          <div className="mt-4 space-x-1 sm:mt-6">
+            <a
+              className="btn btn-primary shadow-lg transform transition hover:-translate-y-0.5
+ "
+              href="#"
+            >
               Book Your escape
+            </a>
+            <a className="btn btn-secondary" href="#">
+              Learn More
             </a>
           </div>
         </div>
